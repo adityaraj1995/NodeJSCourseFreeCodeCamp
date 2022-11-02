@@ -15,3 +15,8 @@ console.log(first)
 //if given file is not present then it will create a new one
 writeFileSync('./newCreated.txt','Hello Buddy wssup!')
 
+//this is cannot be done directly, first it has be read an then written 
+writeFileSync('./merge.txt','./first.txt')
+
+//this works
+writeFileSync('./merge2.txt',first)

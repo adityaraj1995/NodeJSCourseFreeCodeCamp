@@ -1,7 +1,7 @@
 const http = require('http')
 
 const server = http.createServer((req,res)=>{
-    console.log(req)
+    //console.log(req)
     if(req.url === '/'){
         res.end('Welcome to the home page')
     }
@@ -12,5 +12,5 @@ const server = http.createServer((req,res)=>{
     else res.end(` <h1>This page does not exist</h1> 
     <a href='/'> Back to home page</a> `)
 })
-
+//console.log(server)
 server.listen(5000)
